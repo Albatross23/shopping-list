@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="note.png">
+            <h1>Shopping Items</h1>
+            <img class="theme" id="icon-theme" src="img1.jpeg">
+        </header>
+        
+        <form id="form-items">
+            <div class="item-input">
+                <input
+                type="text"
+                class="form-input"
+                id="item-input"
+                name="item"
+                placeholder="Enter Item"                
+                />
+            </div>
+                
+                <select id="priority-input" name="priority" class="priority-item">
+                    <option value="0">Select priority</option>
+                     <option value="1">Vegetables</option>
+                    <option value="2">Fruits</option>
+                    <option value="3">Sweets</option>
+                    <option value="4">Stationary Items</option>
+                </select>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="checkbox-label">Recurring item</label>
+                  </div>
+                  
+
+
+            <div class="item-input" id="submitbtn">
+               <button  type="submit" class="btn">
+               <i  class="fa-solid fa-plus"></i> Add Item
+               
+        </button>
+            </div>
+        </form>
+        <div class="filters">
+            <input
+            type="text"
+            class="input-form-filter"
+            id="filter"
+            placeholder="Filter Items"
+            >
+
+        </div>
+
+        <ul class="add-items" id="item-list">
+             <!-- <li>
+                Eggnog
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Egg
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Milk
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>
+            <li>
+                Oreo
+                <button class="remove-item btn-link text-red">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </li>  -->
+        </ul>
+        </div>
+
+        <button  id="clear" class="btn-clear">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
